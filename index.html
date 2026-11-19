@@ -1,1 +1,67 @@
 
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gold Hunter Pro V19</title>
+<style>
+body {
+  background: #080b12;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 15px;
+}
+h1 { color: gold; }
+.box {
+  background: #171b29;
+  border: 1px solid gold;
+  border-radius: 15px;
+  padding: 25px;
+  margin: 15px 0;
+}
+.signal {
+  color: gold;
+  font-size: 36px;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<h1>🏆 GOLD HUNTER PRO</h1>
+<p>V19 | XAUUSD Analyzer</p>
+
+<div class="box">
+  <h2>🟡 XAUUSD / GOLD</h2>
+  <h1>--.--</h1>
+  <p>API NOT CONNECTED</p>
+</div>
+
+<div class="box">
+  <h2>📡 LIVE SIGNAL</h2>
+  <div class="signal">WAITING</div>
+  <p>Waiting for verified data</p>
+</div>
+
+<div class="box">
+  <h2>🇲🇾 MALAYSIA TIME</h2>
+  <h2 id="clock">--:--:--</h2>
+</div>
+
+<script>
+function updateClock() {
+  document.getElementById("clock").textContent =
+    new Date().toLocaleTimeString("en-GB", {
+      timeZone: "Asia/Kuala_Lumpur",
+      hour12: false
+    });
+}
+updateClock();
+setInterval(updateClock, 1000);
+</script>
+
+</body>
+</html>
+
